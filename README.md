@@ -1,3 +1,7 @@
+Contact management backend.
+Following [This Tutorial](https://buddy.works/tutorials/build-a-full-stack-web-application-with-angular-7-and-nest-js)
+Front end is built using angular (ng-contact-management)[https://github.com/Webbly25/ng-contact-management]
+
 The default ng config, except with eslint and prettier already configured.
 This uses SCSS for it's CSS.
 

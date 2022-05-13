@@ -1,5 +1,5 @@
 {
-	"name": "ng-template",
+	"name": "ng-contact-management",
 	"version": "0.0.0",
 	"scripts": {
 		"ng": "ng",

@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"ng-template": {
+		"ng-contact-management": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -20,7 +20,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "dist/ng-template",
+						"outputPath": "dist/ng-contact-management",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
@@ -67,10 +67,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "ng-template:build:production"
+							"browserTarget": "ng-contact-management:build:production"
 						},
 						"development": {
-							"browserTarget": "ng-template:build:development"
+							"browserTarget": "ng-contact-management:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
@@ -78,7 +78,7 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"browserTarget": "ng-template:build"
+						"browserTarget": "ng-contact-management:build"
 					}
 				},
 				"test": {
@@ -103,5 +103,5 @@
 			}
 		}
 	},
-	"defaultProject": "ng-template"
+	"defaultProject": "ng-contact-management"
 }

@@ -1,0 +1,25 @@
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Title</th>
+			<th>Phone</th>
+			<th>Address</th>
+			<th>City</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let contact of $contacts | async" [routerLink]="['./', contact.id]">
+			<td>{{contact.id}}</td>
+			<td>{{contact.name}}</td>
+			<td>{{contact.title}}</td>
+			<td>{{contact.phone}}</td>
+			<td>{{contact.address}}</td>
+			<td>{{contact.city}}</td>
+		</tr>
+	</tbody>
+</table>
+<a class="btn btn-primary mb-3" routerLink="./new">New Contact</a>
+
+<router-outlet></router-outlet>
